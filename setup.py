@@ -54,7 +54,7 @@ class notedown(Command):
     def run(self):
         print "checking notedown ..."
         try:
-            version = check_output(['noteddown', '--version'])
+            version = check_output(['notedown', '--version'])
         except OSError:
             print("Error: notedown not installed!")
             print("       Please install notedown before installing the hook!")
