@@ -27,10 +27,15 @@ except ImportError:
     import warnings
     msg = """
 ***ImportError*****
-You need to install Frank's little ipyhooks package!
-Go to ObjSimPy/ipyhooks.
-there you run: 'python setup.py install'
-*******************
+You have the ipyhooks.post_save hook activated in your ipython profile,
+but the ipyhooks package is missing in your environment.
+To install it clone the following repository:
+
+> git clone https://github.com/frankmichler/fmipyhooks.git
+
+Then go to fmipyhooks and run:
+> python setup.py install
+***ImportError******
 """    
     warnings.warn(msg)
 '''
