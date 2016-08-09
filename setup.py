@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 '''
 Created on 20.07.2015
-
 @author: frank
+
+Install the notedown hook into an ipython profile.
+
+Usage example:
+    python setup.py notedown --profile=objsim 
 '''
 from distutils.core import setup, Command
 from distutils.errors import DistutilsOptionError

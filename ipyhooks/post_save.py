@@ -21,7 +21,7 @@ def extract_path_list(path, path_list=None):
         return path_list
 
 def post_save(model, os_path, contents_manager):
-    """post-save hook for converting notebooks to .py scripts"""
+    """post-save hook for converting notebooks to .md"""
     if model['type'] != 'notebook':
         return # only do this for notebooks
     base_dir = 'ipynb'
