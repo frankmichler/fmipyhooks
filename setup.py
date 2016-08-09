@@ -6,7 +6,7 @@ Created on 20.07.2015
 Install the notedown hook into an ipython profile.
 
 Usage example:
-    python setup.py notedown --profile=objsim 
+    python setup.py notedown --profile=myprofile 
 '''
 from distutils.core import setup, Command
 from distutils.errors import DistutilsOptionError
@@ -46,7 +46,7 @@ class notedown(Command):
         ]
     
     def initialize_options(self):
-        self.profile = 'nest'
+        self.profile = 'default'
         self.profile_dir = None
         
     def finalize_options(self):
